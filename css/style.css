@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../imgs/background.png");
+    background-repeat: no-repeat;
+}
+
+#logo{
+    height: 66.66px;
+}
+
+#logo img{
+    width: 170px;
+    position: relative;
+    top: 10px;
+    left: 220px;
+}
+
+#titulos{
+    position: relative;
+    top: 100px;
+    left: 213px;
+    height: 680px;
+}
+
+#cocos{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+    height: 430px;
+}
+
+#cocoVerde{
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    left: 5px;
+    top: 120px;
+    width: 214px;
+    height: 215px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px 3px;
+    transition: all 500ms ease;
+}
+
+#cocoRalado{
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    top: -95px;
+    left: 250px;
+    width: 214px;
+    height: 215px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 5px 3px;
+    transition: all 500ms ease;
+}
+
+#cocoRalado:hover, #cocoVerde:hover{
+    background-color:#7c9927;
+}
+
+#cocoVerde img{
+    position: relative;
+    top: 20px;
+    left: 3px;
+    width: 210px;
+}
+
+#cocoRalado img{
+    position: relative;
+    top: 10px;
+    left: 7px;
+    width: 200px;
+}
+
+#titulos h1{
+    font-size: 60pt;
+    font-weight: 700; 
+    color: rgb(56, 66, 87);
+    line-height: 100px;
+}
+
+#subtitle{
+    position: relative;
+    top: -15px;
+    left: 3px;
+    font-size: 18px;
+    color: rgb(56, 66, 87);
+}
+
+#escolha{
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    background-color: #688334;
+    color: white;
+    width: 140px;
+    height: 45px;
+    border: 10px;
+    border-radius: 25px;
+    transition: all 500ms ease;
+}
+
+#escolha:hover{
+    background-color: white;
+    color: #688334;
+}
+
+#comprar{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    cursor: pointer;
+    background-color: #688334;
+    color: white;
+    width: 140px;
+    height: 45px;
+    border: 10px;
+    border-radius: 25px;
+    transition: all 500ms ease;
+}
+
+#comprar:hover{
+    background-color: white;
+    color: #688334;
+}
+
+#imagemCoco{
+    position: absolute;
+    left: 1000px;
+    top: 150px;
+}
+
+#imagemCoco img{
+    width: 600px;
+}
+
+#preco{
+    color: #7c9927;
+    background-color: white;
+    position: absolute;
+    width: 214px;
+    height: 215px;
+    left: 900px;
+    top: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) -2px 5px 5px 1px;
+    transition: all 500ms ease;
+}
+
+#preco:hover {
+    background-color: #688334;
+    color: white;
+}
+
+#texto{
+    cursor: default;
+    font-size: 17pt;
+    position: relative;
+    left: 45px;
+    top: 15px;
+}
+
+#sifra{
+    cursor: default;
+    font-size: 15pt;
+    position: relative;
+    top: 100px;
+    left: 10px;
+}
+
+#valor{
+    cursor: default;
+    font-size: 60pt;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
