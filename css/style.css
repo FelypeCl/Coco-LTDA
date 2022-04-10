@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@font-face {
+    font-family: fontCartao;
+    src: url('../fonts/CREDC___.otf');
+    font-weight: bold;
+}
 
 *{
     padding: 0;
@@ -17,6 +22,7 @@ body {
 }
 
 #logo img{
+    cursor: pointer;
     width: 170px;
     position: relative;
     top: 10px;
@@ -184,4 +190,148 @@ body {
     position: relative;
     top: 10px;
     left: 35px;
+}
+
+#pagamento{
+    width: 300px;
+    position: relative;
+    top: -600px;
+    left: 200px;
+}
+
+#nome, #cep, #endereco, #cpf, #debito, #credito, 
+#nomeCartao, #numeroCartao{
+    height: 40px;
+    width: 270px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) -2px 4px 5px 2px;
+    outline: none;
+    position: relative;
+    left: 5px;
+}
+
+#debito{
+    height: 40px;
+    width: 110px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 45px;
+    cursor: pointer;
+    color: #717171;
+    transition: all 100ms ease;
+}
+
+#credito{
+    height: 40px;
+    width: 110px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #717171;
+    transition: all 100ms ease;
+}
+
+#finalizarPedido{
+    height: 40px;
+    width: 150px;
+    background-color: #7c9927;
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    left: 60px;
+    cursor: pointer;
+}
+
+#cvvCartao{
+    height: 40px;
+    width: 90px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) -2px 4px 5px 2px;
+    position: relative;
+    left: 5px;
+    outline: none;
+}
+
+#dataCartao{
+    height: 40px;
+    width: 175px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) -2px 4px 5px 2px;
+    position: relative;
+    left: 5px;
+    outline: none;
+}
+
+#imgCartao{
+    position: relative;
+    top: -595px;
+    left: 188px;
+}
+
+#cartao{
+    width: 300px;
+}
+
+#imgCartao h1{
+    font-family: fontCartao;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+#cartaoNumero{
+    position: absolute;
+    font-size: 17px;
+    top: 80px;
+    left: 15px;
+}
+
+#cartaoNome{
+    font-size: 15px;
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+
+#cartaoVencimento{
+    font-size: 15px;
+    position: absolute;
+    top: 138px;
+    left: 138px;
+}
+
+#cartaoCvv{
+    font-size: 15px;
+    position: absolute;
+    top: 138px;
+    left: 77px;
+}
+
+#copyright{
+    position: absolute;
+    top: 930px;
+    left: 210px;
+    color: rgb(156, 155, 155);
+    cursor: default;
 }

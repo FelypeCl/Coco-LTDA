@@ -11,13 +11,13 @@
 <body>
     <header id="cabecalho">
         <div id="logo">
-            <img src="imgs/LogoCoco.png" alt="">
+            <img src="imgs/LogoCoco.png" onclick="document.location.reload()">
         </div>
     </header>
     <section id="conteudo">
         <div id="titulos">
             <h1 id="title">Coco gelado<br>com aquele<br>gostinho<br>brasileiro</h1>
-            <h2 id="subtitle">*100% DO SEU CARTÃO DE SER CLONADO</h2>
+            <h2 id="subtitle">*100% DO SEU CARTÃO SER CLONADO</h2>
             <div id="cocos">
                 <div id="cocoVerde">
                     <img src="imgs/Coco Main.png" alt="">
@@ -37,6 +37,29 @@
             <h6 id="sifra">R$</h6>
             <h4 id="valor">0,99</h4>
         </div>
+        <div id="pagamento">
+            <input type="text" id="nome" placeholder="Nome" maxlength="30">
+            <input type="text" id="cep" placeholder="CEP" maxlength="8">
+            <input type="text" id="endereco" placeholder="Endereço" maxlength="30">
+            <input type="text" id="cpf" placeholder="CPF" maxlength="11">
+            <button id="debito">Débito</button>
+            <button id="credito">Crédito</button>
+            <button id="finalizarPedido">Finalizar pedido</button>
+            <input type="text" id="nomeCartao" placeholder="Nome no cartão" maxlength="30">
+            <input type="text" id="numeroCartao" placeholder="Número do cartão" maxlength="16">
+            <input type="text" id="cvvCartao" placeholder="CVV" maxlength="3">
+            <input type="text" id="dataCartao" placeholder="Data de vencimento" maxlength="5">
+        </div>
+        <div id="imgCartao">
+            <img id="cartao"src="imgs/Cartao.png">
+            <h1 id="cartaoNumero">1525 1523 6154 1612</h1>
+            <h1 id="cartaoNome">FULANO DE TAL</h1>
+            <h1 id="cartaoVencimento">01/70</h1>
+            <h1 id="cartaoCvv">000</h1>
+        </div>
     </section>
+    <footer>
+        <p id="copyright">2022 © Coco LTDA © Leonardo Alves && Felype Clayton</p>
+    </footer>
 </body>
 </html>

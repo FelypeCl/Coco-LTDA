@@ -2,13 +2,17 @@
 var tipoDoCoco;
 document.getElementById("cocos").style.display = "none";
 document.getElementById("comprar").style.display = "none";
+document.getElementById("pagamento").style.display = "none";
+document.getElementById("imgCartao").style.display = "none";
 document.getElementById("escolha").addEventListener("click", () => {
     removerTextosPrincipais();
 });
 document.getElementById("comprar").addEventListener("click", () => {
     if (getTipoCoco() == undefined) {
         alert("Você precisa escolher um tipo de coco antes de ir pro checkout.");
+        return;
     }
+    campoDePagamento();
 });
 function removerTextosPrincipais() {
     const $title = document.getElementById("title");
@@ -40,4 +44,11 @@ function getTipoCoco() {
 }
 function setTipoCoco(coco) {
     tipoDoCoco = coco;
+}
+function campoDePagamento() {
+    document.getElementById("cocoVerde").style.display = "none";
+    document.getElementById("cocoRalado").style.display = "none";
+    document.getElementById("comprar").style.display = "none";
+    document.getElementById("pagamento").style.display = "block";
+    document.getElementById("imgCartao").style.display = "block";
 }
